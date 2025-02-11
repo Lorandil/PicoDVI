@@ -120,6 +120,17 @@ static const struct dvi_serialiser_cfg adafruit_dvibell_cfg = {
   .invert_diffpairs = false,
 };
 
+// Adafruit 'Fruit Jam' computer board
+static const struct dvi_serialiser_cfg adafruit_fruitjam_cfg = {
+	.pio = DVI_DEFAULT_PIO_INST,
+	.sm_tmds = {0, 1, 2},
+	.pins_tmds = {14, 16, 18},
+	.pins_clk = 12,
+	.invert_diffpairs = true,
+};
+
+
+
 // Waveshare RP2040-PiZero
 static const struct dvi_serialiser_cfg waveshare_rp2040_pizero = {
 	.pio = DVI_DEFAULT_PIO_INST,
